@@ -1,4 +1,4 @@
-package com.tmb.driver;
+package com.tmb.driver.factory.remote;
 
 import org.openqa.selenium.WebDriver;
 

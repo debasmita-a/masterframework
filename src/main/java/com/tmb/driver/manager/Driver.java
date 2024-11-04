@@ -1,7 +1,8 @@
-package com.tmb.driver;
+package com.tmb.driver.manager;
 
 import org.openqa.selenium.WebDriver;
 
+import com.tmb.driver.factory.local.LocalDriverFactory;
 import com.tmb.enums.BrowserType;
 
 public final class Driver {

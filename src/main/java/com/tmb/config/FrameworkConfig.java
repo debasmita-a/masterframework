@@ -13,8 +13,6 @@ import com.tmb.enums.RunModeType;
 
 @LoadPolicy(Config.LoadType.MERGE)
 @Config.Sources({
-	//"system.properties",
-	//"system.env",
 	"file:./src/test/resources/config.properties"	
 })
 public interface FrameworkConfig extends Config {
