@@ -1,13 +1,17 @@
 package com.tmb.driver;
 
-public class Driver {
+import org.openqa.selenium.WebDriver;
+
+public final class Driver {
 
 	public static void initDriver() { //LocalDriverFactory
-
-		LocalDriverFactory.getDriver().get("http://google.co.in");
+		WebDriver driver  = LocalDriverFactory.getDriver();
+		driver.get("http://google.co.in");
 	}
 
 	public static void quitDriver() {
-		LocalDriverFactory.getDriver().quit();
+		/*
+		 * 
+		 */
 	}
 }
