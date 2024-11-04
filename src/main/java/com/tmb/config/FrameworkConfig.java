@@ -1,9 +1,12 @@
 package com.tmb.config;
 
+import java.net.URL;
+
 import org.aeonbits.owner.Config;
 import org.aeonbits.owner.Config.LoadPolicy;
 
-import com.tmb.converters.StringToBrowserTypeConverter;
+import com.tmb.config.converters.StringToBrowserTypeConverter;
+import com.tmb.config.converters.StringToURLConverter;
 import com.tmb.enums.BrowserRemoteModeType;
 import com.tmb.enums.BrowserType;
 import com.tmb.enums.RunModeType;
@@ -26,4 +29,10 @@ public interface FrameworkConfig extends Config {
 	
 	@Key("browserRemoteMode")
 	BrowserRemoteModeType remoteModeType();
+	
+	@ConverterClass(StringToURLConverter.class)
+	URL seleniumGridURL();
+	
+	@ConverterClass(StringToURLConverter.class)
+	URL selenoidURL();
 }

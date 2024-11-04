@@ -1,4 +1,4 @@
-package com.tmb.converters;
+package com.tmb.config.converters;
 
 import java.lang.reflect.Method;
 
