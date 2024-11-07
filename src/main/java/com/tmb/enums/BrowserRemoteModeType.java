@@ -4,5 +4,5 @@ public enum BrowserRemoteModeType {
 
 	SELENIUM_GRID,
 	SELENOID,
-	BROWSERSTACK;
+	BROWSERSTACK
 }
